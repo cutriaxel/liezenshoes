@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+body {background-color: black; }
+
+#grilla {
+  display: grid;
+  grid-template-areas:  "header nav"
+                        "main main "
+                        "footer footer ";
+  grid-template-rows: 80px auto 80px; 
+  grid-template-columns: 20% auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  
+}
+footer {
+  grid-area: footer;
+}
+
+main {
+  grid-area: main;     
+}
+
+nav {
+  grid-area: nav;
+}
+
+.logo {
+  width: 100%;
+  height: 150px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+nav ul { 
+  list-style-type: none;
+}
+
+nav ul a { 
+  text-decoration: none;
+  padding: 3px 50px 3px 50px;
+  transition: 0.2s ease-in;
+  font-size: 16px;
+}
+
+nav ul a:hover{
+  color: rgba(128, 128, 128, 0.795);
+}
+
+#titulo { 
+  display: grid;
+  margin-top: 40px;
+  justify-items: center;}
+
+  #titulo .content-titulo h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(128, 128, 128, 0);}
+
+#productos { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 30px;  
+  grid-row-gap: 10px;
+  justify-items: center;
+  transition: 0.2s ease;
+  }
+
+  .item img:hover{
+    transform: scale(1.04);
+  }
+
+  .item img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+.item h4 {
+  padding: 5px;
+  text-align: center;
+}
+
+.item button {
+  padding: 5px 30px;
+  outline: none;
+  background-color: red;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+
+.item button:hover{
+  transform: scale(1.04);
+}
+
+#productos img {
+  width: 100%;
+  margin: 15px;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+}
+
+.redes_sociales i { 
+  color: black;
+  }
+
+.redes_sociales i:hover{
+  color: red;   
+  }
+
+.redes_sociales p { 
+  color: black;
+  margin-top: 10px 0 10px 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  }
+
+a i.fa-square-whatsapp { 
+  color: green;
+}
+
+a i.fa-square-instagram { 
+  color: rgb(214, 62, 181);
+}
+
+a i.fa-square-facebook { 
+  color: blue;
+}
+
