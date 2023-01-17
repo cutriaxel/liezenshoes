@@ -169,9 +169,10 @@ a i.fa-square-facebook {
       grid-template-columns: repeat(1, 1fr);
       }
         
-    nav  {
+    nav {
       flex-direction: column;
-      margin: 40px 10px 0 0;
+      align-items: flex-start;
+      margin: 40px 14px 0 0;
       padding: 3px;
       }
   
@@ -179,4 +180,7 @@ a i.fa-square-facebook {
       padding: 3px 3px;
       }   
   
+    nav ul a {
+      align-items: flex-start;
+      }
   }
