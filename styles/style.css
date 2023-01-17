@@ -170,20 +170,27 @@ a i.fa-square-facebook {
       }
         
     nav {
-      flex-direction: column;
-<<<<<<< HEAD
-      align-items: flex-start;
-=======
->>>>>>> af29396e152617500af17deb5af8f42b0a45ef38
-      margin: 40px 14px 0 0;
+      display: flex;
+      justify-content: center;
+      
       padding: 3px;
       }
   
     nav a ul {
       padding: 3px 3px;
       }   
-  
-    nav ul a {
-      align-items: flex-start;
-      }
+    
+      nav ul a { 
+        font-size: 10px;
+        padding: 6px 6px;
+        } 
+
+        .main-header  { 
+          display: block;
+          } 
+
+          header{
+            display: flex;
+            justify-content: center;
+          }
   }
