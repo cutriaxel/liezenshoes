@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: black;
+}
+
+header {
+  margin-bottom: 50px;
+
+}
+
+.navbar-nav a {
+  color: white;
+}
+
+.dropdown-menu a {
+  color: black;
+}
+
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(196, 78, 78, 0.966);
+}
+
+.card-body a {
+  font-size: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card-body h5 {
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+}
+
+.footer-content {
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.footer-content p {
+  color: white;
+}
+
+.modal-header h1 {
+  color: black;
+}
+
+.modal-content {
+  background-color: grey;
+}
