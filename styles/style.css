@@ -139,17 +139,17 @@ nav ul a:hover{
   font-size: 18px;
   }
 
-a i.fa-square-whatsapp { 
-  color: green;
-}
 
-a i.fa-square-instagram { 
-  color: rgb(214, 62, 181);
-}
-
-a i.fa-square-facebook { 
-  color: blue;
-}
+  a i.fa-square-whatsapp { 
+    color: green;
+  }
+  
+  a i.fa-square-instagram { 
+    color: rgb(214, 62, 181);
+  }
+  
+  a i.fa-square-facebook { 
+    color: blue;}
 
   /* media queries */
   @media (max-width: 1024px) {
