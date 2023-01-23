@@ -4,17 +4,52 @@
   box-sizing: border-box;
 }
 
+/*BODY*/
+
 .body {
   background-color: black;
 }
 
-header {
-  margin-bottom: 50px;
+/*HEADER*/
 
+header {
+  margin-bottom: 8px;
+  margin-top: 6px;
+  background-color: #171717;
+  ;
+
+}
+
+/*NAVBAR*/
+
+.navbar {
+  background-color: #171717
+}
+
+.navbar-brand {
+  color: red;
+  background-color: rgba(27, 27, 27, 0);
 }
 
 .navbar-nav a {
   color: white;
+}
+
+.navbar-brand {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+.navbar-brand img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.liezen {
+  margin-right: 30px;
 }
 
 .dropdown-menu a {
@@ -22,9 +57,18 @@ header {
 }
 
 
+/*TITLE*/
 h1 {
   font-family: 'Courier New', Courier, monospace;
   color: rgba(196, 78, 78, 0.966);
+}
+
+
+/*CARD*/
+
+.card:hover {
+  transform: scale(1.14);
+  transition: transform ease .8ms;
 }
 
 .card-body a {
@@ -37,6 +81,32 @@ h1 {
   color: whitesmoke;
 }
 
+.productos h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(196, 78, 78, 0.966);
+}
+
+/*CAROUSEL*/
+
+.carousel-item img {
+  width: 400px;
+  height: 800px;
+  border-radius: 2%;
+}
+
+
+/*MODAL*/
+
+.modal-header h1 {
+  color: black;
+}
+
+.modal-content {
+  background-color: grey;
+}
+
+/*FOOTER*/
+
 .footer-content {
   padding: 5px;
   margin-top: 50px;
@@ -46,10 +116,33 @@ h1 {
   color: white;
 }
 
-.modal-header h1 {
-  color: black;
+.redes_sociales {
+  margin-top: 20px;
 }
 
-.modal-content {
-  background-color: grey;
+.redes_sociales a {
+  margin: 15px;
+}
+
+footer .footer-content {
+  width: auto;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.footer-content img {
+  width: 80px;
+  height: 80px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+/*MEDIA*/
+
+@media (max-width: 768px) {
+  .cartasContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
 }
