@@ -137,13 +137,6 @@ footer .footer-content {
   }
 }
 @media (max-width: 768px) {
-  .title {
-    display: flex;
-    flex-direction: column;
-    padding: 4em;
-  }
-}
-@media (max-width: 768px) {
   .row {
     display: grid;
     justify-content: center;
