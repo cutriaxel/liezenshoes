@@ -1,0 +1,400 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+.body {
+  background-color: black;
+  display: grid;
+  min-height: 100vh;
+}
+
+/*header*/
+header {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  background-color: #171717;
+}
+
+/*FOOTER*/
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.footer-content p {
+  color: white;
+}
+
+.footer-content img {
+  width: 80px;
+  height: 80px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+footer .footer-content {
+  width: auto;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.redes_sociales {
+  margin-top: 20px;
+}
+.redes_sociales a {
+  margin: 15px;
+}
+
+/*Elementos con layout */
+.form_main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.historia {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#titulo {
+  display: grid;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  justify-items: center;
+}
+
+#productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  transition: 0.2s ease;
+}
+
+.container-form {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
+  margin-top: 150px;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+  #productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  #productos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  .cartasContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .historia {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-acordeon {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .row {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .col {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .redes_sociales {
+    width: 50%;
+  }
+}
+/*Variables*/
+/*Componentes*/
+.empresa_p p {
+  font-size: 19px;
+  line-height: 45px;
+  width: 65%;
+  margin: auto;
+}
+
+.contenedor-acordeon {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 80px;
+}
+.contenedor-acordeon h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
+  color: rgba(196, 78, 78, 0.966);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.acordeon {
+  background: #fff;
+}
+.acordeon p {
+  color: black;
+}
+.acordeon label {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  background: #1c1c1c;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: all 300ms ease;
+}
+.acordeon label:hover {
+  background: #2e2e2e;
+}
+.acordeon .contenido-acordeon {
+  padding: 0px;
+  margin: 0px 20px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 600px;
+  padding: 15px 0px;
+}
+
+.btn-acordeon {
+  display: none;
+}
+
+.item button {
+  padding: 5px 30px;
+  outline: none;
+  background-color: red;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+
+.item button:hover {
+  transform: scale(1.04);
+}
+
+.card {
+  padding: 1rem 0;
+}
+
+.card:hover {
+  transform: scale(1.14);
+  transition: transform ease 0.8ms;
+}
+
+.card-body a {
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card-body h5 {
+  font-family: "Courier New", Courier, monospace;
+  color: whitesmoke;
+}
+
+.carousel-item img {
+  width: 300px;
+  height: 750px;
+  border-radius: 2%;
+}
+
+.container-form h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+
+.container-form p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.container-form a {
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+.container-form a i {
+  color: rgb(255, 0, 0);
+  margin-right: 10px;
+}
+
+.container-form form .campo {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+  color: black;
+}
+
+.container-form form textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+  color: black;
+}
+
+.container-form .btn-enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: rgb(255, 8, 0);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+  background: #e39403;
+}
+
+#productos img {
+  width: 100%;
+  margin: 5px;
+}
+
+.item img {
+  width: 100%;
+  height: 550px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.item img:hover {
+  transform: scale(1.04);
+  transition: transform ease 0.8ms;
+}
+
+/*NAVBAR*/
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #171717;
+}
+.navbar a {
+  color: white;
+}
+
+.navbar-brand {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+.navbar-brand img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.navbar-nav li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/*IMG NAVBAR LIEZENSHOES*/
+.liezen {
+  margin-right: 30px;
+}
+
+/*MENU DESPLEGABLE*/
+.dropdown-menu a {
+  color: black;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(196, 78, 78, 0.966);
+  margin: auto;
+}
+
+.item h4 {
+  padding: 5px;
+  text-align: center;
+}
+
+.productos h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(196, 78, 78, 0.966);
+}/*# sourceMappingURL=main.css.map */
