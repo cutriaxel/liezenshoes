@@ -1,13 +1,29 @@
+/*FORMULARIO CONTACTO*/
 .form_main {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
+/* DIV QUIENES SOMOS */
 .historia {
   display: flex;
   align-items: center;
   margin-top: 60px;
   margin-bottom: 30px;
 }
+
+
+/*FOOTER*/
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+}
+
+
 

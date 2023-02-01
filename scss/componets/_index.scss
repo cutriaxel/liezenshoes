@@ -1,0 +1,83 @@
+/*INDEX SECCION NOSOTROS */
+
+.quienes-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.quienes-text-div {
+  width: 99%;
+
+  div {
+    display: inline-block;
+  }
+}
+
+.quienes-text-div1 {
+  width: 90%;
+  margin-left: 12px;
+
+  div {
+    display: inline-block;
+  }
+}
+
+
+.quienes-innerText {
+  width: 30%;
+  padding: 5px;
+
+  h3 {
+    color: $titlecolor;
+    margin-bottom: 3%;
+    font-size: 45px;
+    padding-top: 20%;
+    font-family: $fuentetitlle;
+  }
+
+  p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    line-height: 50px;
+    margin: 3%;
+  }
+}
+
+.btn-tienda { 
+  margin-top: 50px;
+  a {
+    text-decoration: none;
+    border: 3px solid red;
+    border-radius: 100px;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  a:hover {
+    color: black;
+    
+  }
+}
+
+#quienes-innerImg-1 {
+  width: 50%;
+  float: right;
+
+  img {
+    width: 50%;
+  }
+}
+
+#quienes-innerImg-2 {
+  width: 60%;
+  float: left;
+}
+
+
+img,
+svg {
+  vertical-align: middle;
+}

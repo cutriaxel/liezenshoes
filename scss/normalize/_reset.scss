@@ -5,6 +5,7 @@
   font-family: sans-serif;
   color: white;
 }
+/*BODY*/
 
 .body {
   background-color: black;
@@ -19,39 +20,3 @@ header {
   margin-top: 8px;
   background-color: #171717;
 }
-
-/*FOOTER*/
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  background-color: white;
-  padding: 5px;
-  margin-top: 50px;
-}
-.footer-content p {
-  color: white;
-}
-.footer-content img {
-  width: 80px;
-  height: 80px;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
-footer .footer-content {
-  width: auto;
-  height: 80px;
-  margin-bottom: 1rem;
-}
-
-.redes_sociales {
-  margin-top: 20px;
-  a {
-    margin: 15px;
-  }
-}
-
-

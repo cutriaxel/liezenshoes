@@ -2,17 +2,7 @@
   display: grid;
   margin-top: 40px;
   margin-bottom: 50px;
-  justify-items: center;
-}
-
-#productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 30px 20px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-items: center;
-  transition: 0.2s ease;
+  justify-content: center;
 }
 
 .container-form {
@@ -24,3 +14,4 @@
   grid-row-gap: 10px;
   margin-top: 150px;
 }
+

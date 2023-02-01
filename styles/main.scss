@@ -3,11 +3,11 @@
 /*Elementos con layout */
 @import "../scss/layout/flex";
 @import "../scss/layout/grid";
-@import "../scss/views/queries";
 /*Variables*/
 @import "../scss/variables/colors";
 @import "../scss/variables/fuente";
 /*Componentes*/
+@import "../scss/componets/index";
 @import "../scss/componets/text";
 @import "../scss/componets/acordeon";
 @import "../scss/componets/buttons";
@@ -17,4 +17,6 @@
 @import "../scss/componets/images";
 @import "../scss/componets/navbar";
 @import "../scss/componets/tittles";
-
+@import "../scss/componets/footer";
+/* media queries*/
+@import "../scss/views/queries";

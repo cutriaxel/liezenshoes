@@ -7,6 +7,7 @@
   color: white;
 }
 
+/*BODY*/
 .body {
   background-color: black;
   display: grid;
@@ -20,6 +21,22 @@ header {
   background-color: #171717;
 }
 
+/*Elementos con layout */
+/*FORMULARIO CONTACTO*/
+.form_main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* DIV QUIENES SOMOS */
+.historia {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
 /*FOOTER*/
 .footer-content {
   display: flex;
@@ -29,62 +46,13 @@ header {
   text-align: center;
   background-color: white;
   padding: 5px;
-  margin-top: 50px;
-}
-
-.footer-content p {
-  color: white;
-}
-
-.footer-content img {
-  width: 80px;
-  height: 80px;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
-footer .footer-content {
-  width: auto;
-  height: 80px;
-  margin-bottom: 1rem;
-}
-
-.redes_sociales {
-  margin-top: 20px;
-}
-.redes_sociales a {
-  margin: 15px;
-}
-
-/*Elementos con layout */
-.form_main {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.historia {
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
 }
 
 #titulo {
   display: grid;
   margin-top: 40px;
   margin-bottom: 50px;
-  justify-items: center;
-}
-
-#productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 30px 20px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-items: center;
-  transition: 0.2s ease;
+  justify-content: center;
 }
 
 .container-form {
@@ -97,63 +65,84 @@ footer .footer-content {
   margin-top: 150px;
 }
 
-/* media queries */
-@media (max-width: 1024px) {
-  #productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  #productos {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (max-width: 1024px) {
-  .container-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-}
-@media (max-width: 768px) {
-  .cartasContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 4em;
-  }
-}
-@media (max-width: 768px) {
-  .historia {
-    display: flex;
-    flex-direction: column;
-    padding: 4em;
-  }
-}
-@media (max-width: 768px) {
-  .contenedor-acordeon {
-    display: flex;
-    flex-direction: column;
-    padding: 4em;
-  }
-}
-@media (max-width: 768px) {
-  .row {
-    display: grid;
-    justify-content: center;
-  }
-}
-@media (max-width: 768px) {
-  .col {
-    width: auto;
-  }
-}
-@media (max-width: 768px) {
-  .redes_sociales {
-    width: 50%;
-  }
-}
 /*Variables*/
 /*Componentes*/
+/*INDEX SECCION NOSOTROS */
+.quienes-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.quienes-text-div {
+  width: 99%;
+}
+.quienes-text-div div {
+  display: inline-block;
+}
+
+.quienes-text-div1 {
+  width: 90%;
+  margin-left: 12px;
+}
+.quienes-text-div1 div {
+  display: inline-block;
+}
+
+.quienes-innerText {
+  width: 30%;
+  padding: 5px;
+}
+.quienes-innerText h3 {
+  color: rgba(196, 78, 78, 0.966);
+  margin-bottom: 3%;
+  font-size: 45px;
+  padding-top: 20%;
+  font-family: "Courier New", Courier, monospace;
+}
+.quienes-innerText p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  line-height: 50px;
+  margin: 3%;
+}
+
+.btn-tienda {
+  margin-top: 50px;
+}
+.btn-tienda a {
+  text-decoration: none;
+  border: 3px solid red;
+  border-radius: 100px;
+  color: white;
+  background-color: red;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.btn-tienda a:hover {
+  color: black;
+}
+
+#quienes-innerImg-1 {
+  width: 50%;
+  float: right;
+}
+#quienes-innerImg-1 img {
+  width: 50%;
+}
+
+#quienes-innerImg-2 {
+  width: 60%;
+  float: left;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/*TEXTO SECTION QUIENES SOMOS*/
 .empresa_p p {
   font-size: 19px;
   line-height: 45px;
@@ -161,6 +150,7 @@ footer .footer-content {
   margin: auto;
 }
 
+/*ACORDEON CONTENEDOR*/
 .contenedor-acordeon {
   width: 100%;
   max-width: 1000px;
@@ -211,6 +201,7 @@ footer .footer-content {
   display: none;
 }
 
+/*BUTTON INDEX*/
 .item button {
   padding: 5px 30px;
   outline: none;
@@ -227,8 +218,10 @@ footer .footer-content {
   transform: scale(1.04);
 }
 
+/* CARDS*/
 .card {
   padding: 1rem 0;
+  width: 70%;
 }
 
 .card:hover {
@@ -240,29 +233,28 @@ footer .footer-content {
   font-size: 10px;
   font-family: "Times New Roman", Times, serif;
 }
-
 .card-body h5 {
   font-family: "Courier New", Courier, monospace;
   color: whitesmoke;
 }
 
+/*CARROUSEL*/
 .carousel-item img {
   width: 300px;
   height: 750px;
   border-radius: 2%;
 }
 
+/*CONTENEDOR FORM*/
 .container-form h2 {
   margin-bottom: 15px;
   font-size: 35px;
 }
-
 .container-form p {
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
-
 .container-form a {
   font-size: 17px;
   display: inline-block;
@@ -272,12 +264,10 @@ footer .footer-content {
   color: white;
   font-weight: 700;
 }
-
 .container-form a i {
   color: rgb(255, 0, 0);
   margin-right: 10px;
 }
-
 .container-form form .campo {
   width: 100%;
   padding: 15px 10px;
@@ -288,7 +278,6 @@ footer .footer-content {
   outline: 0px;
   color: black;
 }
-
 .container-form form textarea {
   width: 100%;
   min-height: 140px;
@@ -300,7 +289,6 @@ footer .footer-content {
   outline: 0px;
   color: black;
 }
-
 .container-form .btn-enviar {
   padding: 15px;
   font-size: 16px;
@@ -312,13 +300,13 @@ footer .footer-content {
   cursor: pointer;
   transition: all 300ms ease;
 }
-
 .container-form .btn-enviar:hover {
   background: #e39403;
 }
 
+/*IMAGES */
 #productos img {
-  width: 100%;
+  width: 90%;
   margin: 5px;
 }
 
@@ -375,19 +363,131 @@ nav {
   color: black;
 }
 
+/*TITTLES*/
+/*TITTLES PRINCIPALES DE CADA HTML*/
 h1 {
-  font-size: 45px;
+  font-size: 50px;
   font-family: "Courier New", Courier, monospace;
   color: rgba(196, 78, 78, 0.966);
   margin: auto;
 }
 
+/*TITTLE IMG INDEX*/
 .item h4 {
   padding: 5px;
   text-align: center;
 }
 
+/*TITTLE PRODUCTOS DESTACADOS SECCION PRODUCTOS*/
 .productos h2 {
   font-family: "Courier New", Courier, monospace;
   color: rgba(196, 78, 78, 0.966);
+}
+
+/*TITTLE PAGINA PRINCIPAL*/
+#titulo h1 {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* footer */
+.footer-content p {
+  color: white;
+}
+.footer-content img {
+  width: 80px;
+  height: 80px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+footer .footer-content {
+  width: auto;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.redes_sociales {
+  margin-top: 20px;
+}
+.redes_sociales a {
+  margin: 15px;
+}
+
+/* media queries*/
+/* media queries */
+@media (max-width: 1024px) {
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  .cartasContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .historia {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-acordeon {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+  }
+}
+@media (max-width: 768px) {
+  .row {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .col {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .redes_sociales {
+    width: 60%;
+  }
+}
+/*INDEX SECCION NOSOTROS*/
+@media screen and (max-width: 856px) {
+  .quienes-text-div {
+    display: flex;
+    flex-direction: column;
+  }
+  div {
+    display: block;
+  }
+}
+@media screen and (max-width: 856px) {
+  .quienes-innerText {
+    width: 100%;
+    padding: 5px;
+    order: 20;
+    margin: 40px 0;
+  }
+  h3 {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 856px) {
+  #quienes-innerImg-1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 856px) {
+  #quienes-innerImg-2 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,14 +1,5 @@
 /* media queries */
-@media (max-width: 1024px) {
-  #productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  #productos {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 @media (max-width: 1024px) {
   .container-form {
     display: flex;
@@ -55,12 +46,44 @@
 
 @media (max-width: 768px) {
   .redes_sociales{
-      width: 50%;
+      width: 60%;
   }
   }
 
-  
+/*INDEX SECCION NOSOTROS*/
 
+@media screen and (max-width: 856px){
+.quienes-text-div {
+    display: flex;
+    flex-direction: column;}
+    div {
+      display: block;
+  }
+}
+
+@media screen and (max-width: 856px){
+.quienes-innerText {
+    width: 100%;
+    padding: 5px;
+    order: 20;
+    margin: 40px 0;
+}
+h3 {
+  padding-top: 0;
+}
+}
+
+
+@media screen and (max-width: 856px){
+#quienes-innerImg-1 {
+    width: 100%;
+}}
+
+
+@media screen and (max-width: 856px){
+#quienes-innerImg-2 {
+    width: 100%;
+}}
 
 
 
