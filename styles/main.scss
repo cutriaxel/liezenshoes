@@ -7,11 +7,12 @@
 @import "../scss/variables/colors";
 @import "../scss/variables/fuente";
 @import "../scss/variables/mapas";
+@import "../scss/componets/mixins";
 /*Componentes*/
 @import "../scss/componets/index";
+@import "../scss/componets/_productos";
 @import "../scss/componets/text";
 @import "../scss/componets/acordeon";
-@import "../scss/componets/card";
 @import "../scss/componets/carousel";
 @import "../scss/componets/form";
 @import "../scss/componets/images";

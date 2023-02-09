@@ -13,6 +13,11 @@
   margin-bottom: 30px;
 }
 
+.productos {
+  display: flex;
+  justify-content: center;
+}
+
 
 /*FOOTER*/
 .footer-content {
@@ -26,4 +31,18 @@
 }
 
 
+.leftside {
+  background-color: red;
+}
 
+.rightside {
+  background-color: blue;
+}
+
+#col1 {
+  width: 30%;
+}
+
+#col2 {
+  width: 70%;
+}

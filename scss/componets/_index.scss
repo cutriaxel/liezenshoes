@@ -24,7 +24,6 @@
   }
 }
 
-
 .quienes-innerText {
   width: 30%;
   padding: 5px;
@@ -49,10 +48,10 @@
   margin-top: 50px;
   a {
     text-decoration: none;
-    border: 3px solid red;
+    border: 3px solid $titlecolor;
     border-radius: 100px;
     color: white;
-    background-color: red;
+    background-color: $titlecolor;
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
   }
