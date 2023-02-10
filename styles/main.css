@@ -53,22 +53,6 @@ header {
   padding: 5px;
 }
 
-.leftside {
-  background-color: red;
-}
-
-.rightside {
-  background-color: blue;
-}
-
-#col1 {
-  width: 30%;
-}
-
-#col2 {
-  width: 70%;
-}
-
 #titulo {
   display: grid;
   margin-top: 40px;
@@ -145,12 +129,18 @@ header {
   color: black;
 }
 
+/*IMAGES */
+#productos img {
+  width: 90%;
+  margin: 5px;
+}
+
 #quienes-innerImg-1 {
   width: 50%;
   float: right;
 }
 #quienes-innerImg-1 img {
-  width: 50%;
+  width: 90%;
 }
 
 #quienes-innerImg-2 {
@@ -201,7 +191,6 @@ svg {
   flex-direction: column;
   width: 18%;
 }
-
 .category_list .category_item {
   display: block;
   width: 90%;
@@ -213,7 +202,6 @@ svg {
   color: #fff;
   border-radius: 10px;
 }
-
 .category_list .ct_item-active {
   background: #2D3E50;
 }
@@ -229,7 +217,6 @@ svg {
   display: flex;
   flex-wrap: wrap;
 }
-
 .products-list .product-item {
   width: 22%;
   margin-left: 3%;
@@ -241,11 +228,9 @@ svg {
   align-self: flex-start;
   transition: all 0.4s;
 }
-
 .products-list .product-item img {
   width: 100%;
 }
-
 .products-list .product-item a {
   display: block;
   width: 100%;
@@ -317,9 +302,8 @@ svg {
 
 /*CARROUSEL*/
 .carousel-item img {
-  width: 300px;
+  width: 550px;
   height: 750px;
-  border-radius: 2%;
 }
 
 /*CONTENEDOR FORM*/
@@ -379,26 +363,6 @@ svg {
 }
 .container-form .btn-enviar:hover {
   background: #e39403;
-}
-
-/*IMAGES */
-#productos img {
-  width: 90%;
-  margin: 5px;
-}
-
-.item img {
-  width: 100%;
-  height: 550px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.item img:hover {
-  transform: scale(1.04);
-  transition: transform ease 0.8ms;
 }
 
 /*NAVBAR*/
@@ -486,6 +450,7 @@ footer .footer-content {
 }
 .redes_sociales a {
   margin: 15px;
+  text-decoration: none;
 }
 
 /* media queries*/
@@ -631,5 +596,12 @@ footer .footer-content {
   .products-list .product_item {
     width: 100%;
     margin-left: 0px;
+  }
+}
+/*CARROUSEL*/
+@media (max-width: 768px) {
+  .carousel-item img {
+    width: 250px;
+    height: 400px;
   }
 }/*# sourceMappingURL=main.css.map */

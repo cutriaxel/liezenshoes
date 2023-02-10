@@ -44,8 +44,9 @@
   }
 }
 
-.btn-tienda { 
+.btn-tienda {
   margin-top: 50px;
+
   a {
     text-decoration: none;
     border: 3px solid $titlecolor;
@@ -55,10 +56,17 @@
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
   }
+
   a:hover {
     color: black;
-    
+
   }
+}
+
+/*IMAGES */
+#productos img {
+  width: 90%;
+  margin: 5px;
 }
 
 #quienes-innerImg-1 {
@@ -66,7 +74,7 @@
   float: right;
 
   img {
-    width: 50%;
+    width: 90%;
   }
 }
 
